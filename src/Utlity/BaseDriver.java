@@ -29,7 +29,7 @@ public class BaseDriver {
         System.out.println("başlangıç işlemleri yapılıyor");
 
         driver = new ChromeDriver();
-
+        driver.get("https://openmrs.org/");
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
