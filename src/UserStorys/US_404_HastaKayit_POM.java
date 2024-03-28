@@ -43,14 +43,14 @@ public class US_404_HastaKayit_POM extends BaseDriver {
         hke.birthdateYear.sendKeys("1991");
         hke.nextButton.click();
 
-        hke.mothersname.sendKeys("Schneider");
-        hke.nextButton.click();
-
         hke.address.sendKeys("XY mah. 123sok. No.1");
         hke.nextButton.click();
 
         hke.phoneNumber.sendKeys("05501231231");
         hke.nextButton.click();
+
+        hke.nextButton.click();
+
 
         hke.confirm.click();
 

@@ -9,8 +9,9 @@ import java.util.List;
 
 public class US_404_HastaKayit_Elements {
 
-    public US_404_HastaKayit_Elements(){
-        PageFactory.initElements(BaseDriver.driver,this);}
+    public US_404_HastaKayit_Elements() {
+        PageFactory.initElements(BaseDriver.driver, this);
+    }
 
 
     @FindBy(xpath = "//div[@class='zak-header-button zak-header-button--1']/a")
@@ -31,13 +32,13 @@ public class US_404_HastaKayit_Elements {
     @FindBy(xpath = "//li[@id='Inpatient Ward']")
     public WebElement inpatientWard;
 
-    @FindBy (id = "loginButton")
+    @FindBy(id = "loginButton")
     public WebElement loginButton;
 
-    @FindBy (xpath = "//ul[@id='sessionLocation']/li")
+    @FindBy(xpath = "//ul[@id='sessionLocation']/li")
     public List<WebElement> locations;
 
-    @FindBy(xpath = "(//div[@id='apps'])/a[3]")
+    @FindBy(xpath = "(//div[@id='apps'])/a[4]")
     public WebElement patientRegister;
 
     @FindBy(xpath = "//input[@name='givenName']")
@@ -64,10 +65,7 @@ public class US_404_HastaKayit_Elements {
     @FindBy(xpath = "//input[@id='birthdateYear-field']")
     public WebElement birthdateYear;
 
-    @FindBy(xpath = "//input[@name='mothersname']")
-    public WebElement mothersname;
-
-    @FindBy(xpath = "//input[@placeholder='Address, or skip to search manually']")
+    @FindBy(id = "address1")
     public WebElement address;
 
     @FindBy(xpath = "//input[@name='phoneNumber']")
@@ -81,19 +79,6 @@ public class US_404_HastaKayit_Elements {
 
     @FindBy(xpath = "//div[@class='float-sm-right']/span")
     public WebElement idControl;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
