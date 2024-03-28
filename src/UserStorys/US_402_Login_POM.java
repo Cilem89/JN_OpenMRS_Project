@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class US_402_Login_POM extends BaseDriver {
 
-    @Test
+    @Test(priority = 2)
     public void LoginTest() {
         driver.get("https://openmrs.org/");
         US_402_Login_Elements le = new US_402_Login_Elements();
