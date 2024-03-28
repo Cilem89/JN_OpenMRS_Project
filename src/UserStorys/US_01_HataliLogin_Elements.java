@@ -35,5 +35,6 @@ public class US_01_HataliLogin_Elements {
 
     @FindBy(id="error-message")
     public WebElement errorMsg;
+
 }
 
