@@ -1,6 +1,7 @@
 package UserStorys;
 
 import Utlity.BaseDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 public class US_402_Login_POM extends BaseDriver {
@@ -17,11 +18,6 @@ public class US_402_Login_POM extends BaseDriver {
         le.passwordInput.sendKeys("Admin123");
         le.inpatientWard.click();
         le.loginButton.click();
-
-
-
-
-
 
 
     }
