@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class _US_408_HastaListeleme_POM extends BaseDriver {
     @Test()
-    public void HastalisteSayisi() {
+    public void Hastalisteleme() {
         _US_408_HastaListeleme_Elements hle = new _US_408_HastaListeleme_Elements();
 
         driver.get("https://openmrs.org/");
@@ -24,13 +24,13 @@ public class _US_408_HastaListeleme_POM extends BaseDriver {
 
         int hastaTablosuSayisi=hle.hastaTablosu.size();
 
-        String infoText=hle.hastaTablosuInfo.getText();
+        String infoTextReplaceAll=hle.hastaTablosuInfo.getText().replaceAll("[^0-9]","");
+        String infoText=infoTextReplaceAll.substring(3);
 
-        int totalHastaSayisi=Integer.parseInt(infoText.split(" ")[5]);
+        int totalHastaSayisi=Integer.parseInt(infoText);
 
         Assert.assertEquals(hastaTablosuSayisi,totalHastaSayisi,"Sayılar eşleşmiyor");
 
     }
-
 
 }
