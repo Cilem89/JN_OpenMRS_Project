@@ -1,14 +1,12 @@
-package UserStorys;
+package UserStorys.US_409_;
 
 import Utlity.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
-public class US_09_HastaKayitlariniBirlestirmeElements {
-    public US_09_HastaKayitlariniBirlestirmeElements() {
+public class US_409_HastaKayitlariniBirlestirmeElements {
+    public US_409_HastaKayitlariniBirlestirmeElements() {
         PageFactory.initElements(BaseDriver.driver,this);
     }
 

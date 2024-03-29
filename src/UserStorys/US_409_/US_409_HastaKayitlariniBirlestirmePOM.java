@@ -1,20 +1,20 @@
-package UserStorys;
+package UserStorys.US_409_;
 
+import UserStorys.US_409_.US_409_HastaKayitlariniBirlestirmeElements;
 import Utlity.BaseDriver;
 import Utlity.Tools;
-import com.beust.ah.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US_09_HastaKayitlariniBirlestirmePOM extends BaseDriver {
+public class US_409_HastaKayitlariniBirlestirmePOM extends BaseDriver {
 
    @Test
     public void Merge(){
 
        US_03_LogOut_Elements lo=new US_03_LogOut_Elements();
-       US_09_HastaKayitlariniBirlestirmeElements hkb=new US_09_HastaKayitlariniBirlestirmeElements();
+       US_409_HastaKayitlariniBirlestirmeElements hkb=new US_409_HastaKayitlariniBirlestirmeElements();
 
 
        lo.Demo.click();
