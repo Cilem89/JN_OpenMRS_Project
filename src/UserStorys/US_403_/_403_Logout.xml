@@ -2,7 +2,7 @@
 <suite name="My Suite">
     <test name="test1">
         <classes>
-            <class name="UserStorys.US_03_LogoutPOM">
+            <class name="UserStorys.US_403_.US_403_LogoutPOM">
             </class>
         </classes>
     </test>

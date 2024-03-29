@@ -1,23 +1,20 @@
-package UserStorys;
+package UserStorys.US_403_;
 
 import Utlity.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
-public class US_06_SearchElements {
-
-    public US_06_SearchElements() {
+public class US_403_LogOut_Elements {
+    public US_403_LogOut_Elements() {
         PageFactory.initElements(BaseDriver.driver,this);
-
     }
+
     @FindBy(xpath = "//div[@class='zak-header-button zak-header-button--1']/a")
     public WebElement Demo;
     @FindBy(xpath = "(//span[@class='elementor-button-content-wrapper'])[2]/span")
     public WebElement openmrs2;
-    @FindBy(xpath = "((//span[@class='elementor-button-text'])[4]")
+    @FindBy(xpath = "(//span[@class='elementor-button-text'])[4]")
     public WebElement openDemo;
     @FindBy(xpath = "//input[@id='username'] ")
     public WebElement username;
@@ -31,22 +28,9 @@ public class US_06_SearchElements {
     public WebElement loginButton;
     @FindBy(xpath = "//div[@class='col-12 col-sm-12 col-md-12 col-lg-12']/h4")
     public WebElement pharmacyDisplayed;
+    @FindBy(xpath = "//li[@class='nav-item logout']/a")
+    public WebElement logout;
 
-    @FindBy(xpath = "//i[@class='icon-search']")
-    public WebElement HastKaydi;
-    @FindBy(xpath = "//input[@class='form-control']")
-    public WebElement search;
-
-    @FindBy(xpath = "//span[@class='recent-lozenge']")
-    public WebElement hasta;
-    @FindBy(xpath = "//font[text()='1003JM']")
-    public WebElement pagee;
-
-    @FindBy(xpath = "//td[@class='dataTables_empty']")
-    public WebElement negative;
-
-
-
-
+    @FindBy(xpath = "//legend[@class='w-auto']")
+    public WebElement page;
 }
-

@@ -1,15 +1,16 @@
-package UserStorys;
+package UserStorys.US_406_;
 
+import UserStorys.US_403_.US_403_LogOut_Elements;
 import Utlity.BaseDriver;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-public class US_06_SearchPOM extends BaseDriver {
+public class US_406_SearchPOM extends BaseDriver {
     @Test
     public void Search(){
-        US_06_SearchElements se=new US_06_SearchElements();
-        US_03_LogOut_Elements lo=new US_03_LogOut_Elements();
+        US_406_SearchElements se=new US_406_SearchElements();
+        US_403_LogOut_Elements lo=new US_403_LogOut_Elements();
 
         lo.Demo.click();
         lo.openmrs2.click();

@@ -1,12 +1,15 @@
-package UserStorys;
+package UserStorys.US_408_;
 
 import Utlity.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class US_01_HataliLogin_Elements {
-    public US_01_HataliLogin_Elements(){PageFactory.initElements(BaseDriver.driver,this);}
+import java.util.List;
+
+public class _US_408_HastaListeleme_Elements {
+    public  _US_408_HastaListeleme_Elements(){
+        PageFactory.initElements(BaseDriver.driver,this);}
 
 
     @FindBy(xpath = "//div[@class='zak-header-button zak-header-button--1']/a")
@@ -30,11 +33,12 @@ public class US_01_HataliLogin_Elements {
     @FindBy (id = "loginButton")
     public WebElement loginButton;
 
-    @FindBy(id= "sessionLocationError")
-    public WebElement locationErrorMsg;
+    @FindBy(xpath = "//div[@id='apps']/a[1]")
+    public WebElement findPatient;
 
-    @FindBy(id="error-message")
-    public WebElement errorMsg;
+    @FindBy(xpath = "//tbody[@role='alert']/tr")
+    public List<WebElement> hastaTablosu;
 
+    @FindBy(xpath = "//div[@id='patient-search-results-table_info']")
+    public WebElement hastaTablosuInfo;
 }
-

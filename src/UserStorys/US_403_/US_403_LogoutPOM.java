@@ -1,14 +1,14 @@
-package UserStorys;
+package UserStorys.US_403_;
 
 import Utlity.BaseDriver;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
-public class US_03_LogoutPOM extends BaseDriver {
+public class US_403_LogoutPOM extends BaseDriver {
 
     @Test
     public void Logout(){
-        US_03_LogOut_Elements lo=new US_03_LogOut_Elements();
+        US_403_LogOut_Elements lo=new US_403_LogOut_Elements();
 
 
         lo.Demo.click();

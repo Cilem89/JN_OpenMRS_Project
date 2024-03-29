@@ -1,4 +1,4 @@
-package UserStorys;
+package UserStorys.US_401_;
 
 import Utlity.BaseDriver;
 import Utlity.Tools;
@@ -7,10 +7,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-public class US_01_HataliLogin_POM extends BaseDriver {
+public class US_401_HataliLogin_POM extends BaseDriver {
     @Test(priority = 1, dataProvider = "datalarim")
     public void HataliloginTest(String username, String password) {
-        US_01_HataliLogin_Elements hle = new US_01_HataliLogin_Elements();
+        US_401_HataliLogin_Elements hle = new US_401_HataliLogin_Elements();
 
         hle.demoButton.click();
         Tools.JSClick(hle.openMRS2Button);
