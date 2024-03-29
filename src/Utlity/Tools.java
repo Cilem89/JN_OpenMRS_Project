@@ -1,9 +1,7 @@
 package Utlity;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import java.util.List;
 
@@ -20,7 +18,7 @@ public class Tools {
 
 
 
-    public static void JSClick(WebElement e){
+    public static void JSClick(String e){
         JavascriptExecutor js=(JavascriptExecutor) BaseDriver.driver;
         js.executeScript("arguments[0].click();", e);
     }
